@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سياسة الخصوصية | تطبيق قرش (Qirsh Privacy Policy)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0D0B14;
+      --card-bg: #161224;
+      --card-border: #2A243D;
+      --accent: #10B981;
+      --accent-glow: rgba(16, 185, 129, 0.15);
+      --text: #F3F4F6;
+      --text-muted: #9CA3AF;
+      --heading: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .lang-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .lang-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 8px 20px;
+      border-radius: 9999px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--accent);
+      color: #052e16;
+      border-color: var(--accent);
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 24px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 14px;
+      background: var(--accent-glow);
+      color: var(--accent);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: var(--heading);
+      margin-bottom: 8px;
+      font-weight: 800;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .section {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+
+    .section h2 {
+      color: var(--heading);
+      font-size: 20px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section p {
+      color: var(--text);
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    .section ul {
+      padding-right: 24px;
+      margin-bottom: 12px;
+    }
+
+    [dir="ltr"] .section ul {
+      padding-right: 0;
+      padding-left: 24px;
+    }
+
+    .section li {
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .contact-card {
+      background: linear-gradient(135deg, rgba(16,185,129,0.1), rgba(22,18,36,0.8));
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .contact-card a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    [dir="ltr"] {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="lang-switcher">
+      <button class="lang-btn active" id="btn-ar" onclick="switchLang('ar')">العربية (Arabic)</button>
+      <button class="lang-btn" id="btn-en" onclick="switchLang('en')">English</button>
+    </div>
+
+    <!-- ARABIC CONTENT -->
+    <div id="content-ar">
+      <header>
+        <span class="badge">تطبيق قرش | Qirsh</span>
+        <h1>سياسة الخصوصية</h1>
+        <p class="subtitle">آخر تحديث: أكتوبر 2026</p>
+      </header>
+
+      <div class="section">
+        <h2>🔒 ١. التزامنا التام بالخصوصية</h2>
+        <p>نحن في <strong>تطبيق قرش (Qirsh)</strong> نؤمن بأن بياناتك المالية وشؤونك الشخصية ملك خاص بك وحدك. لذلك صُمم التطبيق ليعمل <strong>محلياً بالكامل (Offline-First)</strong> دون الحاجة إلى إنشاء حساب أو الاتصال بخوادم خارجية.</p>
+      </div>
+
+      <div class="section">
+        <h2>💾 ٢. البيانات التي يتم جمعها وتخزينها</h2>
+        <p><strong>لا يقوم تطبيق قرش بجمع أو رفع أو إرسال أي بيانات شخصية أو مالية إلى خوادمنا أو خوادم أي طرف ثالث على الإطلاق.</strong></p>
+        <ul>
+          <li><strong>المعاملات المالية والميزانيات:</strong> يتم تخزين كافة تفاصيل النفقات، الدخول، والفئات محلياً داخل جهازك فقط في قاعدة بيانات محلية (SQLite).</li>
+          <li><strong>بيانات الملف الشخصي:</strong> يتم حفظ اسمك واختيارات العملة واللغة محلياً داخل هاتفك.</li>
+          <li><strong>لا يوجد تتبع:</strong> لا نستخدم أي أدوات تتبع إعلاني، ولا نجمع رقم الهاتف أو المعرفات الإعلانية.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>⏰ ٣. الصلاحيات المستخدمة على جهازك</h2>
+        <p>يطلب التطبيق فقط الحد الأدنى من الصلاحيات الضرورية لعمل وظائفه محلياً:</p>
+        <ul>
+          <li><strong>الإشعارات (Notifications):</strong> لإرسال تذكيرات بتسجيل المصروفات اليومية بناءً على الأوقات التي تحددها بنفسك.</li>
+          <li><strong>المنبهات الدقيقة (SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM):</strong> لضمان وصول التنبيه في الوقت المحدد بدقة الذي اخترته لتسجيل مصروفاتك دون تأخير من نظام التشغيل.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>🗑️ ٤. حذف البيانات والتحكم بها</h2>
+        <p>أنت صاحب السيطرة الكاملة بنسبة 100% على بياناتك:</p>
+        <ul>
+          <li>يمكنك تعديل أو حذف أي عملية، فئة، أو ميزانية في أي وقت من داخل التطبيق.</li>
+          <li>عند مسح بيانات التطبيق أو إلغاء تثبيت تطبيق قرش من جهازك، يتم حذف كافة السجلات والبيانات نهائياً وبشكل فوري من جهازك.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>👶 ٥. خصوصية الأطفال</h2>
+        <p>التطبيق لا يجمع أي معلومات تعريفية شخصية من أي شخص، بما في ذلك الأطفال دون سن 13 عاماً، وهو آمن تماماً للاستخدام العائلي والمالي.</p>
+      </div>
+
+      <div class="contact-card">
+        <h2>📬 تواصل معنا</h2>
+        <p>إذا كان لديك أي استفسار أو اقتراح حول سياسة الخصوصية الخاصة بتطبيق قرش، يمكنك التواصل معنا مباشرة عبر البريد الإلكتروني:</p>
+        <p><a href="mailto:rayan.development.dev@gmail.com">rayan.development.dev@gmail.com</a></p>
+      </div>
+    </div>
+
+    <!-- ENGLISH CONTENT -->
+    <div id="content-en" class="hidden" dir="ltr">
+      <header>
+        <span class="badge">Qirsh App</span>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Last updated: October 2026</p>
+      </header>
+
+      <div class="section">
+        <h2>🔒 1. Our Privacy Commitment</h2>
+        <p>At <strong>Qirsh (قرش)</strong>, developed by Rayan Development, we believe your personal finances belong to you alone. The app is engineered with an <strong>Offline-First architecture</strong>: it functions entirely on your device without requiring account registration or connecting to external cloud servers.</p>
+      </div>
+
+      <div class="section">
+        <h2>💾 2. Data Collection and Storage</h2>
+        <p><strong>Qirsh does NOT collect, upload, transmit, or share any personal or financial data to external servers or third parties.</strong></p>
+        <ul>
+          <li><strong>Financial Records:</strong> All expense logs, income entries, categories, and budget targets are stored strictly on your local device in a local SQLite database.</li>
+          <li><strong>Profile Information:</strong> Your chosen name, currency, and language preferences stay solely inside your device's local storage.</li>
+          <li><strong>No Tracking:</strong> We do not use third-party advertising SDKs, tracking pixels, analytics trackers, or advertising IDs.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>⏰ 3. Device Permissions</h2>
+        <p>Qirsh requests only the minimal system permissions required to provide scheduled expense reminders locally:</p>
+        <ul>
+          <li><strong>POST_NOTIFICATIONS:</strong> Required to deliver your daily expense logging reminder notifications.</li>
+          <li><strong>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM:</strong> Used strictly to ensure your scheduled expense reminders trigger accurately at the time you configured without system power-management delays.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>🗑️ 4. Data Control and Deletion</h2>
+        <p>You maintain 100% control over your data at all times:</p>
+        <ul>
+          <li>You can edit or delete individual transactions, categories, or budgets directly within the app.</li>
+          <li>Uninstalling the app or clearing its application storage permanently deletes all local records immediately and completely.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>👶 5. Children's Privacy</h2>
+        <p>Qirsh does not knowingly collect or solicit personal data from children under the age of 13. The application is completely private and safe for all users.</p>
+      </div>
+
+      <div class="contact-card">
+        <h2>📬 Contact Us</h2>
+        <p>If you have any questions or feedback regarding this Privacy Policy, feel free to reach out to us at:</p>
+        <p><a href="mailto:rayan.development.dev@gmail.com">rayan.development.dev@gmail.com</a></p>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Qirsh (قرش) · Rayan Development · All Rights Reserved</p>
+    </footer>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      const ar = document.getElementById('content-ar');
+      const en = document.getElementById('content-en');
+      const btnAr = document.getElementById('btn-ar');
+      const btnEn = document.getElementById('btn-en');
+      const html = document.documentElement;
+
+      if (lang === 'ar') {
+        ar.classList.remove('hidden');
+        en.classList.add('hidden');
+        btnAr.classList.add('active');
+        btnEn.classList.remove('active');
+        html.setAttribute('dir', 'rtl');
+        html.setAttribute('lang', 'ar');
+      } else {
+        en.classList.remove('hidden');
+        ar.classList.add('hidden');
+        btnEn.classList.add('active');
+        btnAr.classList.remove('active');
+        html.setAttribute('dir', 'ltr');
+        html.setAttribute('lang', 'en');
+      }
+    }
+  </script>
+</body>
+</html>
